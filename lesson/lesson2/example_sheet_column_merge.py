@@ -1,5 +1,5 @@
 #
-# pandas merge
+# pandas_study merge
 # merge by
 #
 import pandas as pd
@@ -19,4 +19,5 @@ print (df_merge)
 
 path = 'sheet_column_merged.xlsx'
 
-df_merge.to_excel(path)
+# df_merge.to_excel(path)
+

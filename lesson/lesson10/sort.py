@@ -1,6 +1,7 @@
 #
 # Example) merge one sheet
 #
+
 import pandas as pd
 
 df = pd.read_excel('b.xlsx')
