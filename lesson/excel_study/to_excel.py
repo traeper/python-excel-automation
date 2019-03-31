@@ -3,7 +3,7 @@ import xlrd
 from dateutil import parser
 
 
-def find_date_in_path(path:str, target_datetime_str:str):
+def search_row_of_date_in_excel(path: str, target_datetime_str: str):
     wb = xlrd.open_workbook(path)
     sheet = wb.sheet_by_index(0)
 
@@ -26,8 +26,7 @@ def find_date_in_path(path:str, target_datetime_str:str):
     return None
 
 
-find_result = find_date_in_path('xlsx/samsung-payment.xlsx', '2017-01-10')
+found_row = search_row_of_date_in_excel('xlsx/samsung-payment.xlsx', '2017-01-10')
 
-if find_result is not None:
-    print(find_result)
-
+if found_row is not None:
+    print(found_row)
